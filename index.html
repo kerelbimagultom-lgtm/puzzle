@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle Sepak Bola (2048 Bola)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Puzzle Sepak Bola</h1>
+    <p>Satukan klub sepak bola yang sama level.<br>
+    Capai klub terbaik (level 25)!<br>
+    Kontrol: ↑ ↓ ← → (keyboard) atau <span class="mobile-arrows">Tombol panah samping.</span></p>
+    <div id="game-container">
+        <div id="grid"></div>
+        <div id="info">
+            <div>Level tertinggi: <span id="max-level">1</span></div>
+            <div id="message"></div>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+    <div id="btn-arrows">
+        <!-- Controls for mobile/tap users -->
+        <button data-dir="up">↑</button>
+        <div>
+            <button data-dir="left">←</button>
+            <button data-dir="down">↓</button>
+            <button data-dir="right">→</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
